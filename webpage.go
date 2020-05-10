@@ -22,5 +22,5 @@ func main() {
 	randomValue = strconv.Itoa(rand.Intn(max-min+1) + min)
 	r := mux.NewRouter()
 	r.HandleFunc("/", HomeHandler)
-	http.ListenAndServe(":8080", r)
+	http.ListenAndServe(":80", r)
 }
