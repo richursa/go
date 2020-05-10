@@ -11,6 +11,7 @@ import (
 )
 
 var randomValue string
+
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
 
 	w.Write([]byte("Sample webpage time : " + time.Now().String() + "\n" + "containerRandomNumber = " + randomValue + "\nHAAAI GAUTHAM \nENTHARUND CHELLAKILI\nSUGHANGALOKKE THANNE ?"))
