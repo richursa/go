@@ -1,1 +1,1 @@
-web: bin/webpage
+web: bin/main
