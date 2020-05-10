@@ -3,9 +3,10 @@ package main
 import (
 	"math/rand"
 	"net/http"
+	"os"
 	"strconv"
 	"time"
-	"os"
+
 	"github.com/gorilla/mux"
 )
 
@@ -13,7 +14,7 @@ var randomValue string
 
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
 
-	w.Write([]byte("Sample webpage time : " + time.Now().String() + "\n" + "containerRandomNumber = " + randomValue))
+	w.Write([]byte("Sample webpage time : " + time.Now().String() + "\n" + "containerRandomNumber = " + randomValue + "\nHAAAI GAUTHAM \nENTHARUND CHELLAKILI"))
 }
 func main() {
 	rand.Seed(time.Now().UnixNano())
